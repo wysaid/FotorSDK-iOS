@@ -239,7 +239,7 @@ Credits
 
 **Design, coding:** [Dake](https://github.com/dake) , [ArcRain](https://github.com/ArcRain)
 
-**Powered by [Fotor](http://www.fotor.com)
+**Powered by [Fotor](http://www.fotor.com)**
 
 License
 ---
