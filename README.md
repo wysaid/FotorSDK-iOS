@@ -237,8 +237,9 @@ You can set Output image size with [EIPhotoSDKContext's createContextWithImage:m
 Credits
 ---
 
-*Design, coding:** [Dake](https://github.com/dake) , [ArcRain](https://github.com/ArcRain)
-*Powered by [Fotor](http://www.fotor.com)
+**Design, coding:** [Dake](https://github.com/dake) , [ArcRain](https://github.com/ArcRain)
+
+**Powered by [Fotor](http://www.fotor.com)
 
 License
 ---
