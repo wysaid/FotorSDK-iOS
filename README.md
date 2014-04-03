@@ -14,6 +14,8 @@ Installing
 The easiest way to use FotorSDK is to add all the files in the FotorSDK-iOS group (or directory) into your app with "Create groups for any added folders" option of Xcode. 
 Add the following frameworks to your project (Build Phases > Link Binary With Libraries): AssetsLibrary, AVFoundation, CoreGraphics, CoreMedia, GLKit, OpenGLES, libc++.dylib, libsdtc++.dylib.
 
+[Detail Illustration Description](https://github.com/Fotor/FotorSDK-iOS/wiki)
+
 ##### Or git submodule
 
 Alternatively, you should be able to setup a [git submodule](http://git-scm.com/docs/git-submodule) and reference the files in your Xcode project.
@@ -231,6 +233,12 @@ You can set Output image size with [EIPhotoSDKContext's createContextWithImage:m
 }
 
 ```
+
+Credits
+---
+
+**Design, coding:** [Dake](https://github.com/dake) , [ArcRain](https://github.com/ArcRain)
+**Powered by [Fotor](http://www.fotor.com)
 
 License
 ---
