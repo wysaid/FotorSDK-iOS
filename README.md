@@ -5,7 +5,7 @@ FotorSDK-iOS
 
 Get more info and downloads of FotorSDK (for iOS and Android) via [the FotorSDK mobile portal](https://github.com/Fotor)
 
-[Click here for **official documentation for FotorSDK-iOS**](https://github.com/Fotor/FotorSDK-iOS/wiki)
+[Click here for **official documentation for FotorSDK-iOS**](https://github.com/Fotor/FotorSDK-iOS/wiki/API-Documentation)
 
 
 Installing
