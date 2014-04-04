@@ -234,6 +234,13 @@ You can set Output image size with [EIPhotoSDKContext's createContextWithImage:m
 
 ```
 
+TODO
+---
+
+**Draw, Color splash...**
+**Effect camera**
+**dynamic sticker**
+
 Credits
 ---
 
