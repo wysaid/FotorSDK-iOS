@@ -66,8 +66,9 @@ Getting started with FotorSDK-iOS is dead simple. Just initialize it with an UIi
     [_editorSessions addObject:session];
     
     EIPhotoSDKContext *context = [session createContextWithImage:highResImage];
-    [context render:^(UIImage *result, BOOL completed) {
+    [context renderWithBegin:nil complete:^(UIImage *result, BOOL completed) {
         if (nil != result) {
+            // now, you got the result image 
         }
     }];
 }
@@ -223,11 +224,9 @@ You can set Output image size with [EIPhotoSDKContext's createContextWithImage:m
     [_editorSessions addObject:session];
     
     EIPhotoSDKContext *context = [session createContextWithImage:highResImage maxPixelSize:MAXFLOAT];
-    [context render:^(UIImage *result, BOOL completed) {
+    [context renderWithBegin:nil complete:^(UIImage *result, BOOL completed) {
         if (nil != result) {
-            _imageView.image = result;
-            
-            [self saveImageToSystemAlbum:result];
+            // now, you got the result image 
         }
     }];
 }
