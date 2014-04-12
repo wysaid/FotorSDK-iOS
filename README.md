@@ -25,12 +25,13 @@ Alternatively, you should be able to setup a [git submodule](http://git-scm.com/
 
 `git submodule add https://github.com/Fotor/FotorSDK-iOS.git`
 
+<!--
 ##### Or CocoaPods
-
+ 
 [CocoaPods](http://cocoapods.org/) is a dependency manager for Objective-C projects.
 
 `pod 'FotorSDK-iOS'`
-
+-->
 
 Usage
 ---
