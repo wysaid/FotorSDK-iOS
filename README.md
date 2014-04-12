@@ -240,9 +240,11 @@ You can set Output image size with [EIPhotoSDKContext's createContextWithImage:m
 TODO
 ---
 
+**Collage**
+
 **Draw, Color splash...**
 
-**Effect camera**
+**Real time effect camera**
 
 **dynamic sticker**
 
@@ -251,7 +253,7 @@ Credits
 
 **Design, coding:** [Dake](https://github.com/dake), [ArcRain](https://github.com/ArcRain), [wysaid](https://github.com/wysaid)
 
-**Powered by [Fotor](http://www.fotor.com)**
+**Powered by [**fotor**](http://www.fotor.com)**
 
 License
 ---
