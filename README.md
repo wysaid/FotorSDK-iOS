@@ -242,11 +242,14 @@ TODO
 
 **Collage**
 
-**Draw, Color splash...**
+**Draw, Color splash**
 
 **Real time effect camera**
 
-**dynamic sticker**
+**Dynamic sticker**
+
+**Store (in-app purchase)**
+
 
 Credits
 ---
