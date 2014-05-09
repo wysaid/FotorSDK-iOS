@@ -13,7 +13,7 @@ Installing
 
 The easiest way to use FotorSDK is to add all the files in the FotorSDK-iOS group (or directory) into your app with "Create groups for any added folders" option of Xcode. 
 
-Add the following frameworks to your project (Build Phases > Link Binary With Libraries): `AssetsLibrary`, `AVFoundation`, `CoreGraphics`, `CoreMedia`, `GLKit`, `OpenGLES`, `libc++.dylib`, `libsdtc++.dylib`.
+Add the following frameworks to your project (Build Phases > Link Binary With Libraries): `AssetsLibrary`, `AVFoundation`, `CoreGraphics`, `CoreMedia`, `GLKit`, `OpenGLES`, `libsdtc++.6.0.9.dylib` or (`libsdtc++.dylib` if necessary).
 
 Add the linker flags to your project (Build Settings > Linking > other Linker Flags): `-ObjC`.
 
