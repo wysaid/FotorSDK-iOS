@@ -1,0 +1,25 @@
+{
+    "version": "1",
+    "package_key": "com.everimaging.photosdk.collage.background.0",
+    "title": "Colors",
+    "icon_normal":"collage_one_menu_color_default",
+    "icon_pressed":"collage_one_menu_color_pressed",
+    "classes": {
+        "1": "0xffffff",
+        "2": "0x000000",
+        "3": "0xDFE2C5",
+        "4": "0xB7D9C0",
+        "5": "0xFDDBB6",
+        "6": "0xA790FF",
+        "7": "0x61B296",
+        "8": "0xFF788B",
+        "9": "0x00FFFF",
+        "10": "0xF63189",
+        "11": "0x21C33B",
+        "12": "0xFF6900",
+        "13": "0xD83510",
+        "14": "0xFBA623",
+        "15": "0x38B1B7",
+        "16": "0x206082"
+    }
+}

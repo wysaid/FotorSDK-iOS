@@ -1,0 +1,84 @@
+{
+    "version": "1",
+    "package_key": "0.font.photosdk.everimaging.com",
+    "title": "System",
+    "icon_normal":"edit_two_menu_text_style_1default.png",
+    "icon_pressed":"edit_two_menu_text_style_1pressed.png",
+    "classes": [
+                {
+                "title": "Avenir Light",
+                "normal": "Avenir-Light"
+                },
+                {
+                "title": "Avenir Next Ultra Light",
+                "normal": "AvenirNext-UltraLight"
+                },
+                {
+                "title": "Bodoni 72 Book",
+                "normal": "BodoniSvtyTwoITCTT-Book"
+                },
+                {
+                "title": "Didot",
+                "normal": "Didot"
+                },
+                {
+                "title": "Futura Medium",
+                "normal": "Futura-Medium",
+                "italic": "Futura-MediumItalic"
+                },
+                {
+                "title": "Georgia",
+                "normal": "Georgia"
+                },
+                {
+                "title": "Gill Sans Light",
+                "normal": "GillSans-Light",
+                "italic": "GillSans-LightItalic"
+                },
+                {
+                "title": "Helvetica Bold",
+                "bold": "Helvetica-Bold"
+                },
+                {
+                "title": "Helvetica Neue UltraLight",
+                "normal": "HelveticaNeue-UltraLight"
+                },
+                {
+                "title": "Marker Felt Thin",
+                "normal": "MarkerFelt-Thin"
+                },
+                {
+                "title": "Marion",
+                "normal": "Marion-Regular",
+                "italic": "Marion-Italic",
+                "bold": "Marion-Bold"
+                },
+                {
+                "title": "Optima ExtraBlack",
+                "bold": "Optima-ExtraBlack"
+                },
+                {
+                "title": "Savoye LET Plain",
+                "normal": "SavoyeLETPlain"
+                },
+                {
+                "title": "Snell Roundhand",
+                "italic": "SnellRoundhand"
+                },
+                {
+                "title": "Superclarendon",
+                "normal": "Superclarendon-Regular",
+                "bold": "Superclarendon-Bold",
+                "italic": "Superclarendon-Italic",
+                "boldItalic": "Superclarendon-BlackItalic"
+                },
+                {
+                "title": "Times New Roman",
+                "normal": "TimesNewRomanPSMT"
+                },
+                {
+                "title": "Verdana",
+                "normal": "Verdana"
+                }
+                ]
+}

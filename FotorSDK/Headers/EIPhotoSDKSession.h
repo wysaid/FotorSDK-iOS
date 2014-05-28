@@ -61,7 +61,7 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface EIPhotoSDKSession : NSObject
  
  @warning Calling this method from any thread other in the main thread may result in undefined behavior.
  */
-- (EIPhotoSDKContext *)createContextWithImage:(UIImage *)image NS_RETURNS_RETAINED;
+- (EIPhotoSDKContext *)createContextWithImage:(UIImage *)image error:(NSError **)outError NS_RETURNS_RETAINED;
 
 /**
  Generates a new EIPhotoSDKContext with a maximum size.
@@ -72,6 +72,6 @@ NS_CLASS_AVAILABLE_IOS(6_0) @interface EIPhotoSDKSession : NSObject
  
  @warning Calling this method from any thread other in the main thread may result in undefined behavior.
  */
-- (EIPhotoSDKContext *)createContextWithImage:(UIImage *)image maxPixelSize:(CGFloat)size NS_RETURNS_RETAINED;
+- (EIPhotoSDKContext *)createContextWithImage:(UIImage *)image maxPixelSize:(CGFloat)size error:(NSError **)outError NS_RETURNS_RETAINED;
 
 @end

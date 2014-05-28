@@ -13,7 +13,7 @@ Installing
 
 The easiest way to use FotorSDK is to add all the files in the FotorSDK-iOS group (or directory) into your app with "Create groups for any added folders" option of Xcode. 
 
-Add the following frameworks to your project (Build Phases > Link Binary With Libraries): `AssetsLibrary`, `AVFoundation`, `CoreGraphics`, `CoreMedia`, `GLKit`, `OpenGLES`, `libsdtc++.6.0.9.dylib` or (`libsdtc++.dylib` if necessary).
+Add the following frameworks to your project (Build Phases > Link Binary With Libraries): `AssetsLibrary`, `AVFoundation`, `CoreGraphics`, `CoreMedia`, `GLKit`, `OpenGLES`, `libsdtc++.6.0.9.dylib` or (`libsdtc++.dylib` if necessary), `ImageIO`, `libsqlite`, `CoreData`, `StoreKit`, `MobileCoreServices`, `CoreTelephony`, `SystemConfiguration`, `libz`.
 
 Add the linker flags to your project (Build Settings > Linking > other Linker Flags): `-ObjC`.
 
@@ -217,7 +217,7 @@ then you update the `launchPhotoEditorWithImage:highResolutionImage:` method abo
 
 ###### Specify Output image size
 
-You can set Output image size with [EIPhotoSDKContext's createContextWithImage:maxPixelSize:](https://github.com/Fotor/FotorSDK-iOS/wiki) method
+You can set Output image size with [EIPhotoSDKContext's createContextWithImage:maxPixelSize:error](https://github.com/Fotor/FotorSDK-iOS/wiki) method
 
 ``` objc
 
@@ -227,7 +227,8 @@ You can set Output image size with [EIPhotoSDKContext's createContextWithImage:m
     EIPhotoSDKSession *session = [photoEditor session];
     [_editorSessions addObject:session];
     
-    EIPhotoSDKContext *context = [session createContextWithImage:highResImage maxPixelSize:MAXFLOAT];
+    NSError *error = nil;
+    EIPhotoSDKContext *context = [session createContextWithImage:highResImage maxPixelSize:MAXFLOAT error:&error];
     [context renderWithBegin:nil complete:^(UIImage *result, BOOL completed) {
         if (nil != result) {
             // now, you got the result image 
@@ -240,15 +241,11 @@ You can set Output image size with [EIPhotoSDKContext's createContextWithImage:m
 TODO
 ---
 
-**Collage**
-
 **Draw, Color splash**
 
 **Real time effect camera**
 
 **Dynamic sticker**
-
-**Store (in-app purchase)**
 
 
 Credits
