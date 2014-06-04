@@ -35,7 +35,7 @@ Alternatively, you should be able to setup a [git submodule](http://git-scm.com/
 
 Usage
 ---
-Getting started with FotorSDK-iOS is dead simple. Just initialize it with an UIimage and set a delegate. Then you can use it as a usual ViewController. [Demo apps](https://github.com/koluray/ImageEditor-ios)
+Getting started with FotorSDK-iOS is very simple. After initializing an instance of EIPhotoSDKEditorController with a UIImage and setting a proper delegate, you can use the instance as a normal UIViewController. [Demo apps](https://github.com/koluray/ImageEditor-ios)
 
 
 ```  objc
@@ -54,12 +54,16 @@ Getting started with FotorSDK-iOS is dead simple. Just initialize it with an UIi
     EIPhotoSDKEditorController *ctrler = [EIPhotoSDK photoEditorControllerWithImage:editingResImage error:NULL];
     ctrler.editorDelegate = self;
     
-    // If a high res image is passed, create the high res context with the image and the photo editor.
-    if (nil != highResImage) {
-        [self setupHighResContextForPhotoEditor:ctrler withImage:highResImage];
-    }
+    // If you want output a high resolution image, create the high resolution context with the image and the
+    // photo editor by un-commenting the lines below.
     
-    // Present the photo editor.
+    // Note: This is optional
+    
+    //if (nil != highResImage) {
+    //    [self setupHighResContextForPhotoEditor:ctrler withImage:highResImage];
+    //}
+    
+    // Make the photo editor to user.
     [self presentViewController:ctrler animated:YES completion:nil];
 }
 
@@ -72,14 +76,14 @@ Getting started with FotorSDK-iOS is dead simple. Just initialize it with an UIi
     EIPhotoSDKContext *context = [session createContextWithImage:highResImage];
     [context renderWithBegin:nil complete:^(UIImage *result, BOOL completed) {
         if (nil != result) {
-            // now, you got the result image 
+            // Get the high resolution result image from here 
         }
     }];
 }
 
 ```
 
-When used with UIImagePickerController, EIPhotoSDKEditorController can be made to function as a part of the picker by to call the `launchPhotoEditorWithImage:highResolutionImage:` above.
+If you are working with UIImagePickerController, here's some sample code you can free to use.
 
 ```  objc
 
@@ -141,14 +145,14 @@ After a image has been edited, the editor will call delegate's `photoEditor:didF
 
 - (void)photoEditor:(EIPhotoSDKEditorController *)editor didFinishedWithImage:(UIImage *)image
 {
+    //Got screen size edited image from here
     _imageView.image = image;
     [editor dismissViewControllerAnimated:YES completion:nil];
 }
 
 ```
 
-Additionally, the optional delegate's `photoEditorDidCancel:` method is provided for when you want to catch the cancel callback.
-
+Additionally, the optional delegate's method photoEditorDidCancel: will be called when image editing is cancelled by the user.
 For more detail,  please see [Demo apps](https://github.com/koluray/ImageEditor-ios).
 
 
@@ -157,7 +161,7 @@ Customizing
 
 ##### Menu customization
 
-Editor menu tools can customize using [EIPhotoEditorCustomization's setToolOrder](https://github.com/Fotor/FotorSDK-iOS/wiki) method.
+Editor menu tools can be customized by using [EIPhotoEditorCustomization's setToolOrder](https://github.com/Fotor/FotorSDK-iOS/wiki) method.
 
 ```  objc
 
@@ -186,7 +190,7 @@ Editor menu tools can customize using [EIPhotoEditorCustomization's setToolOrder
 
 ```
 
-then you update the `launchPhotoEditorWithImage:highResolutionImage:` method above like this:
+then you update the `launchPhotoEditorWithImage:highResolutionImage:` method like this:
 
 ```  objc
 
