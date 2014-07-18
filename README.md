@@ -83,7 +83,7 @@ Getting started with FotorSDK-iOS is very simple. After initializing an instance
 
 ```
 
-If you are working with UIImagePickerController, here's some sample code you can free to use.
+If you are working with UIImagePickerController, here's some sample code you can use for free.
 
 ```  objc
 
@@ -137,7 +137,7 @@ If you are working with UIImagePickerController, here's some sample code you can
 
 ```
 
-After a image has been edited, the editor will call delegate's `photoEditor:didFinishedWithImage:` method. The delegate's method is required to receive edited image.
+After an image has been edited, the editor will call delegate's `photoEditor:didFinishedWithImage:` method. The delegate's method is required to receive the edited image.
 
 ```  objc
 
